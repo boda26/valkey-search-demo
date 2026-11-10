@@ -1,0 +1,18 @@
+# Valkey client
+valkey>=6.0.0
+
+# Embeddings (for vector search demo)
+sentence-transformers>=2.2.0
+
+# CLI interface
+rich>=13.0.0
+typer>=0.9.0
+
+# Web UI
+streamlit>=1.28.0
+
+# Data handling
+numpy>=1.24.0
+
+# Testing
+pytest>=7.0.0
