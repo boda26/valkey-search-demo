@@ -26,7 +26,7 @@ class IndexManager:
         Create a product index with full schema.
         
         Schema:
-        - title: TEXT (weight 2.0 for higher relevance)
+        - title: TEXT SORTABLE
         - description: TEXT
         - category: TAG (pipe-separated)
         - price: NUMERIC SORTABLE
@@ -47,7 +47,7 @@ class IndexManager:
             "PREFIX", "1", prefix,
             "LANGUAGE", language,
             "SCHEMA",
-            "title", "TEXT", "WEIGHT", "2.0", "SORTABLE",
+            "title", "TEXT", "SORTABLE",
             "description", "TEXT",
             "category", "TAG", "SEPARATOR", "|",
             "price", "NUMERIC", "SORTABLE",
